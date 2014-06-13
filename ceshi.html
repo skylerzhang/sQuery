@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <style>
+        #div1 {width: 100px; height: 100px; background: red;}
+        h2 {width: 100%; background: #000000; height: 20px;}
+    </style>
+    <script src="sQuery.js"></script>
+    <script>
+        $(function(){
+            $('#div1').mouseenter(function(ev){
+                alert($(this));
+            })
+        });
+
+    </script>
+</head>
+<body>
+
+<div id="div1">
+    <h2></h2>
+</div>
+</body>
+</html>

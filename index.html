@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <script src="sQuery.js"></script>
+    <script>
+    $(function(){
+        $('.box').css('background','red').click(function(){
+            alert(1);
+        });
+        $('.box').attr({abc:123,bvn:345});
+    });
+
+    /*window.onload=function(){
+        $('.box').css('background','red')
+    }*/
+    </script>
+</head>
+<body>
+<div id="div1">
+    <ul>
+        <li id="li1" class="box"><input aaa="12" type="text" value="aaa" id="txt1" /></li>
+        <li id="li1"><input type="text" value="bbb" /></li>
+        <li id="li1" class="box active"><input type="button" value="bbb" /></li>
+        <li><input type="button" value="ccc" /></li>
+    </ul>
+    <ol>
+        <li class="box"><input type="text" value="aaa" id="txt1" /></li>
+        <li><input type="text" value="bbb" /></li>
+        <li class="box active"><input type="button" value="bbb" /></li>
+        <li><input type="button" value="ccc" /></li>
+    </ol>
+</div>
+
+<div id="div2">
+    <ul>
+        <li class="box txt1"><input type="text" value="aaa" id="txt1"  class="txt1"/></li>
+        <li><input type="text" value="bbb" /></li>
+        <li class="box active"><input type="button" value="bbb" /></li>
+        <li><input type="button" value="ccc" /></li>
+    </ul>
+    <ol>
+        <li class="box"><input type="text" value="aaa" id="txt1" /></li>
+        <li><input type="text" value="bbb" /></li>
+        <li class="box active"><input type="button" value="bbb" /></li>
+        <li><input type="button" value="ccc" /></li>
+    </ol>
+</div>
+</body>
+</html>
