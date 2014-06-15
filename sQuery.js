@@ -274,6 +274,11 @@ function startMove(obj,json,time){
         obj.timer=setInterval(function(){
             n++;
             var a=n/count;
+            for (var name in json){
+                if (name=='opacity'){
+                    obj.style[name]=
+                }
+            }
         },30)
     }
 }
