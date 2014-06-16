@@ -270,13 +270,17 @@ function startMove(obj,json,time){
         }else{
             start[name]=getStyle(obj,name);
         }
+        dis[name]=json[name]-start[name];
         clearInterval(obj.timer);
         obj.timer=setInterval(function(){
             n++;
             var a=n/count;
             for (var name in json){
                 if (name=='opacity'){
-                    obj.style[name]=
+                    obj.style[name]=(start[name]+dis[name]*a)/100;
+                    obj.style.filter='alpha(opacity:'+(start[name]+dis[name]*a)+')';
+                }else{
+                    obj.style[name]=(start[name]+dis[name]*a)+'px';
                 }
             }
         },30)
