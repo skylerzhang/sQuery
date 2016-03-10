@@ -11,7 +11,7 @@ function SQuery(arg){
             break;
         case 'string':
             if (arg.indexOf('<')!=-1){
-                this.dom_string=arg;    //创建元素
+                this.dom_string=arg;    
             }else{
                 this.elements=getEle(arg);
             }
